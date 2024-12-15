@@ -1,3 +1,4 @@
 before_install:
   - sdk install kotlin
-  - sdk use kotlin
+jdk:
+  - openjdk21

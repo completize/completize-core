@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.25"
+    id("org.jetbrains.kotlin.jvm") version "1.9.25"
 }
 
 group = "com.completize.core"

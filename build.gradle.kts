@@ -5,17 +5,24 @@ plugins {
 group = "com.completize.core"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
+allprojects {
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
+    apply(plugin = "org.jetbrains.kotlin.jvm")
 
-tasks.test {
-    useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(21)
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation(kotlin("test"))
+    }
+
+    tasks.test {
+        useJUnitPlatform()
+    }
+
+    kotlin {
+        jvmToolchain(21)
+    }
+
 }
